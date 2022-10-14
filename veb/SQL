@@ -1,0 +1,17 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  city TEXT NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Николая', '28','Москва', 'Ул.Ленина 37');
+INSERT INTO EMPLOYEE VALUES (0002, 'Владимир', '31','Красноярск', 'Ул.Матросова 21');
+INSERT INTO EMPLOYEE VALUES (0003, 'Анна', '24','Санкт-Петербург', 'Ул.Петропавловская 77');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE city = 'Москва';
